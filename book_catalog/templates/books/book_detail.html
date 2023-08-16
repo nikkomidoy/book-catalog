@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-12">
+                <h3 class="text-uppercase border-bottom mb-4">{{ book.title }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text"><strong>Summary:</strong> {{ book.summary }}</p>
+                    <p class="card-text"><strong>Categories:</strong> {{ book.display_categories }}</p>
+                    <p class="card-text"><strong>Authored by:</strong> {{ book.author }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
